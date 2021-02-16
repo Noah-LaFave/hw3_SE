@@ -1,0 +1,91 @@
+<!-- Auth: Noah LaFave -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Please buy our Cheesecake</title>
+<link rel="stylesheet" href="stylesheets/css_style.css">
+ <script
+  src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/>
+ </script>
+
+
+
+</head>
+<body>
+
+ <h1>Cheesecake Order Form</h1>
+
+ <img src= "https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" style="width:200px;height:200px;">
+
+
+  <p id="postText"></p>
+
+
+ <form id="form1">
+
+  <table >
+   <tr>
+    <td valign="top">
+     <head>Quantity</head><br><br>
+    
+     <select id="amount" name="Quantity" >
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+     </select>
+    </td>
+  
+    <td valign="top">
+     <head>Toppings</head><br>
+   
+     <input type="radio" id="Plain" name="topping" value="Plain">
+     <label for="Plain">Plain</label><br>
+     <input type="radio" id="Cherry" name="topping" value="Cherry">
+     <label for="Cherry">Cherry</label><br>
+     <input type="radio" id="Chocolate" name="topping"  value="Chocolate">
+     <label for="Chocolate">Chocolate</label>
+  
+    </td>
+   </tr>
+  </table>
+  
+  <label id="lText" for="Text"> Notes:</label><br>
+ 
+  <textarea id="Text" rows="4" cols="50" placeholder="Enter any special instuctions here:"></textarea> <br><br>
+
+ 
+ </form>
+ <input id="order" type="submit" value="Order" onclick="orderFunction()">
+    
+ <br><br>
+<!-- Inline Citation: Dropdown text code sourced from w3schools.com -->
+<div class="dropdown">
+  <p>Total Orders for month of <span>Jan</span></p>
+  <div class="dropdown-content">
+  <p>Jan</p>
+  <p>Feb</p>
+  <p>Mar</p>
+  <p>Apr</p>
+  <p>May</p>
+  <p>Jun</p>
+  <p>Jul</p>
+  <p>Aug</p>
+  <p>Sep</p>
+  <p>Oct</p>
+  <p>Nov</p>
+  <p>Dec</p>
+
+  </div>
+</div>
+  <ul>
+   <li>11 Cherry</li>
+   <li>17 Chocolate</li>
+   <li>31 Plain</li>
+  </ul>  
+
+
+<script src="javascripts/order.js"></script>
+
+</body>
+</html>
